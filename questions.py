@@ -75,7 +75,6 @@ def tokenize(document):
     refined_tokens = [
         word for word in tokens if not (word in nltk.corpus.stopwords.words("english") or word in string.punctuation)
     ]
-    refined_tokens.sort()
 
     return refined_tokens
 
